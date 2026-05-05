@@ -2,7 +2,7 @@
 
 This is a fork of the original **Minerva** repository by [Marcel Kilgus](https://github.com/MarcelKilgus/Minerva), specifically configured to compile the **Spanish (SP) version** of the Sinclair QL operating system.
 
-##ROM version 1.98
+## ROM version 1.98
 ---
 
 ## 🇬🇧 English Description
