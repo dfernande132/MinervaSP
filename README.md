@@ -41,13 +41,14 @@ El proceso de ensamblado sigue la misma lógica que el repositorio original pero
 
 ---
 ## 🛠️ How to Compile / Cómo Compilar
+To achieve the Spanish localization and keyboard mapping, only the files within the following directory have been modified mapa_kb_rom: Contains the keyboard mapping and localized character sets./ Solo se han modificado los ficheros dentro del directorio mapa_kb_rom para adaptar el mapeado del teclado y las fuentes de caracteres al español.
 
 I have included a helper script called `MIMAKE.BAS` to automate the build process using **QPC2**.
 
 ### Prerequisites / Requisitos
 1. **QPC2 Emulator** configured.
 2. The source code directory linked to `DOS1_`.
-3. A system disk (like `QPC1.WIN`) in `WIN1_` containing the development tools (Outptr, Make, etc.) in the `extras` folder.
+3. A system disk (like `QPC1.WIN` in `WIN1_` and  `SMSQE343.WIN ` in `WIN1_`) containing the development tools (Outptr, Make, etc.) in the `extras` folder.
 
 ### Step-by-step / Paso a paso
 1. Open **QPC2**.
@@ -69,7 +70,8 @@ The core logic for compiling is:
 50 EX 'win2_extras_exe_Make'; 'dev7_M_ROM_link -l'
 60 PRINT "COMPILADO, EMPAQUETANDO"
 ...
-130 SBYTES 'dev7_M_Minerva198SP_rom', adr, 48 * 1024
+130 SBYTES 'dev7_M_Minerva198SP_rom', adr, 48 * 1024 
+```
 ---
 ## License / Licencia
 This project is distributed under the same license terms as the original Minerva source code. / Este proyecto se distribuye bajo los mismos términos de licencia que el código fuente original de Minerva.
