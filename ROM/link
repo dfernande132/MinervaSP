@@ -1,7 +1,7 @@
-program dev7_m_rom_#0
+program dev7_m_rom_exe
 
 input dev7_m_rom_ver_rel
-input dev7_m_rom_ver_#0_rel
+input dev7_m_rom_ver_spanish_rel
 input dev7_m_ss_lib
 input dev7_m_io_lib
 input dev7_m_ip_lib
@@ -26,4 +26,4 @@ input dev7_m_ib_lib
 input dev7_m_gw_lib
 input dev7_m_cs_lib
 input dev7_m_ii_lib
-input dev7_m_tb_#0_lib
+input dev7_m_tb_spanish_lib
