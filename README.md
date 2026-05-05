@@ -40,6 +40,36 @@ El proceso de ensamblado sigue la misma lógica que el repositorio original pero
 * **Version española:** Jose Daniel Fernandez.
 
 ---
+## 🛠️ How to Compile / Cómo Compilar
 
+I have included a helper script called `MIMAKE.BAS` to automate the build process using **QPC2**.
+
+### Prerequisites / Requisitos
+1. **QPC2 Emulator** configured.
+2. The source code directory linked to `DOS1_`.
+3. A system disk (like `QPC1.WIN`) in `WIN1_` containing the development tools (Outptr, Make, etc.) in the `extras` folder.
+
+### Step-by-step / Paso a paso
+1. Open **QPC2**.
+2. Point your `DOS1_` device to the folder where you cloned this repository.
+3. Run the compilation script by typing: 
+   `LRUN DOS1_M_MIMAKE_BAS` (or the corresponding path).
+4. The script will:
+   - Configure the environment.
+   - Call the `Make` tool to link the ROM.
+   - Allocate memory and save the final 48K image as **`Minerva198SP_rom`**.
+
+### Build Script (`MIMAKE.BAS`)
+The core logic for compiling is:
+```basic
+10 REM Compila
+20 DEV_USE 7, 'dos1_'
+30 LRESPR 'win2_extras_source_outptr_bin'
+40 PROG_USE 'win2_extras_exe'
+50 EX 'win2_extras_exe_Make'; 'dev7_M_ROM_link -l'
+60 PRINT "COMPILADO, EMPAQUETANDO"
+...
+130 SBYTES 'dev7_M_Minerva198SP_rom', adr, 48 * 1024
+---
 ## License / Licencia
 This project is distributed under the same license terms as the original Minerva source code. / Este proyecto se distribuye bajo los mismos términos de licencia que el código fuente original de Minerva.
