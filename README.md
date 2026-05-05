@@ -19,7 +19,7 @@ The build process follows the same logic as the original repository but points t
 
 ### Credits
 * **Original Author:** Marcel Kilgus (based on work by Stuart Honeyball/Qview).
-* **Localization:** [Tu Nombre o Usuario].
+* **Spanish version:** Jose Daniel Fernandez.
 
 ---
 
@@ -37,7 +37,7 @@ El proceso de ensamblado sigue la misma lógica que el repositorio original pero
 
 ### Créditos
 * **Autor Original:** Marcel Kilgus (basado en el trabajo de Stuart Honeyball/Qview).
-* **Localización:** [Tu Nombre o Usuario].
+* **Version española:** Jose Daniel Fernandez.
 
 ---
 
